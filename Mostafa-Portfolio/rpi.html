@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Raspberry Pi – Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Boxicons (if you're using them) -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <main class="main">
+    <section class="section">
+      <h2 class="section__title">Raspberry Pi 4</h2>
+      
+      <!-- Optional image below title -->
+      <img src="assets/img/pilogo2.png" alt="Apple logo" class="apple-logo">
+
+      <!-- Description in styled gray box -->
+      <div class="container grid">
+        <div class="skills__content" style="margin-top: 2rem;">
+          <p>
+            I've worked on a ton of Raspberry Pi projects that show functionality, creativity, and daily utility. These projects have helped me dive deeper into Linux, networking, and system optimization while letting me build things that are genuinely useful to me.
+            <br></br>
+            Some of the setups I’ve completed include a personal cloud storage solution using Nextcloud, a network-wide ad blocker with Pi-hole, and a real-time display that shows live PC stats on a compact screen with a cool anime backrgound. I also configured a Wake-on-LAN server specifically to power on my Apple TV with the press of a button on my pi display.
+            <br></br>
+            On another Pi, I built two projects. The first is a smart dashboard that connects to Spotify and displays the currently playing song, with controls to pause, resume, or skip tracks. It also shows the current date, time, and upcoming holidays. The second is a voice-activated assistant that listens through a mic, transcribes what I say, and responds in the terminal with text-based output.
+            <br></br>
+            Each project has pushed me to solve new problems, learn new tools, and better understand the hardware-software relationship. These builds weren’t just plug-and-play, I figured things out step by step and turned a tiny board into something powerful and personal.
+          </p>
+        </div>
+      </div>
+
+      <!-- Back link -->
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="index.html#work" class="button button--ghost">
+            ← Back to Portfolio
+          </a>          
+      </div>
+
+      <!-- Pi Project Gallery -->
+      <!-- Pi Project Gallery -->
+        <div class="container grid" style="margin-top: 3rem;">
+            <div class="skills__content">
+            <img src="assets/img/pipicone.png" alt="Pi project 1" style="width: 100%; border-radius: 1rem;">
+            </div>
+        
+            <div class="skills__content">
+            <img src="assets/img/pipictwo.png" alt="Pi project 2" style="width: 100%; border-radius: 1rem;">
+            </div>
+        
+            <div class="skills__content">
+            <img src="assets/img/pipicthree.jpg" alt="Pi project 3" style="width: 100%; border-radius: 1rem;">
+            </div>
+        </div>
+  
+  
+
+    </section>
+  </main>
+
+  <!-- Scroll Reveal animation -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal().reveal('.section__title, .section__subtitle, .about__img, .skills__content, .button', {
+      origin: 'top',
+      distance: '50px',
+      duration: 1000,
+      delay: 200,
+      reset: false
+    });
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CS Teacher – Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Boxicons (if you're using them) -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <main class="main">
+    <section class="section">
+      <h2 class="section__title">Computer Science Teacher</h2>
+      
+      <!-- Optional image below title -->
+      <img src="assets/img/teacherlogo.webp" alt="Apple logo" class="apple-logo">
+
+      <span class="section__subtitle">Role Breakdown</span>
+
+      <!-- Description in styled gray box -->
+      <div class="container grid">
+        <div class="skills__content" style="margin-top: 2rem;">
+          <p>
+            I’ve been teaching computer science to high school students at the very same school I once attended, a place that shaped me and still feels like home. For the past year and a half, I’ve balanced this role while working as a Genius Admin, and it’s been one of the most fulfilling chapters of my life.
+            <br></br>
+            The opportunity came when the principal called me directly, asking for help during a time when the school was facing a major shortage of teachers. Without hesitation, I stepped in — not just for the students, but for the teachers who once raised me, mentored me, and believed in me. Many of them are now my colleagues, and I consider them my second parents.
+            <br></br>
+            What warms my heart the most is the connection I’ve built with my students. They’re eager, curious, and genuinely excited to learn the things I’ve grown to love. There’s something special about being the one to pass that knowledge on. This experience has been more than just a job; it’s been a way to give back to the people and place that made me who I am.
+          </p>
+        </div>
+      </div>
+
+      <!-- Back link -->
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="index.html#work" class="button button--ghost">
+            ← Back to Portfolio
+          </a>          
+      </div>
+    </section>
+  </main>
+
+  <!-- Scroll Reveal animation -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal().reveal('.section__title, .section__subtitle, .about__img, .skills__content, .button', {
+      origin: 'top',
+      distance: '50px',
+      duration: 1000,
+      delay: 200,
+      reset: false
+    });
+  </script>
+</body>
+</html>
+
