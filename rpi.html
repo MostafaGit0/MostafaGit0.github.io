@@ -11,6 +11,17 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">Mostafa Bendahud</a>
+      
+      <!-- Theme container here, inside header -->
+      <div class="theme-container">
+        <span class="theme-label">Switch Modes</span>
+        <i class='bx bx-moon change-theme change-theme-button' id="theme-button"></i>
+      </div>
+    </nav>
+  </header>
   <main class="main">
     <section class="section">
       <h2 class="section__title">Raspberry Pi 4</h2>
@@ -72,6 +83,7 @@
       reset: false
     });
   </script>
+  <script src="assets/js/project-theme.js"></script>
 </body>
 </html>
 

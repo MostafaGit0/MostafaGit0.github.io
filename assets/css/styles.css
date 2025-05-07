@@ -122,12 +122,45 @@ img {
   color: var(--first-color);
 }
 
+/* Theme container and label styling with arrow */
+.theme-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.theme-label {
+  position: absolute;
+  right: 35px;
+  font-size: var(--smaller-font-size);
+  color: var(--text-color);
+  background-color: var(--container-color);
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.25rem;
+  white-space: nowrap;
+}
+
+.theme-label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -8px; /* Increased from -5px to -8px to make arrow larger */
+  transform: translateY(-50%);
+  border-width: 6px 0 6px 8px; /* Increased from 5px to 6px and 5px to 8px */
+  border-style: solid;
+  border-color: transparent transparent transparent var(--container-color);
+}
+
+.theme-container:hover .theme-label {
+  color: var(--text-color); /* Keep the same color on hover */
+}
+
 /*========== Variables light theme ==========*/
 body.light-theme {
   --title-color: hsl(var(--second-hue), 15%, 15%);
   --text-color: hsl(var(--second-hue), 8%, 35%);
-  --body-color: hsl(var(--second-hue), 100%, 99%);
-  --container-color: #e9e9e9;
+  --body-color: hsl(var(--second-hue), 35%, 90%); /* Even darker background */
+  --container-color: hsl(var(--second-hue), 35%, 85%); /* Darker container background */
 }
 
 /*========== 
@@ -329,26 +362,36 @@ body.light-theme {
 }
 
 .home__img {
-  width: 200px;
-  height: 200px;
+  width: 160px; 
+  height: 160px; 
   object-fit: cover;
   border-radius: 50%;
   overflow: hidden;
+  margin-bottom: 30px; /* Added to help with centering */
 }
 
 
 .home__caption {
   position: absolute;
-  top: 3.2rem; 
-  font-size: 0.75rem;
-  color: hsl(var(--first-hue), var(--sat), 85%); /* Soft, visible purple */
-  font-family: 'Poppins', sans-serif;
+  bottom: -0.01rem; 
+  width: auto;
   text-align: center;
-  pointer-events: none;
-  font-weight: 600;
+  font-size: var(--smaller-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  background-color: var(--container-color);
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
-
+/* Light mode caption styling */
+.light-theme .home__caption {
+  color: var(--title-color);
+  background-color: var(--container-color);
+}
 
 .home__handle {
   position: relative;
@@ -360,10 +403,9 @@ body.light-theme {
     hsla(var(--first-hue), var(--sat), var(--lig), 0.5),
     hsla(var(--first-hue), var(--sat), var(--lig), 0.1)
   );
-
   border-radius: 10rem 10rem 1rem 1rem;
   display: flex;
-  align-items: flex-end;
+  align-items: center; /* Changed from flex-end to center */
   justify-content: center;
   overflow: hidden;
 }
@@ -382,7 +424,7 @@ body.light-theme {
 
 .home__social {
   bottom: 4rem;
-  left: 0;
+  left: 1.5rem; 
   display: grid;
   row-gap: 0.5rem;
 }
@@ -1112,20 +1154,12 @@ body.light-theme {
   } */
 }
 
-/* @media screen and (min-width: 767px) {
-  /* .work__container {
-    grid-template-columns: repeat(2, max-content);
-  } */
-
-/* .contact__info {
-    grid-template-columns: 300px;
+/* Responsive adjustments */
+@media screen and (max-width: 767px) {
+  .theme-label {
+    display: none; /* Hide label on mobile */
   }
-
-  .contact__container {
-    grid-template-columns: repeat(2, 325px);
-    justify-content: center;
-  }
-} */
+}
 
 /* For large devices */
 @media screen and (min-width: 992px) {
@@ -1152,8 +1186,11 @@ body.light-theme {
   }
 
   .home__img {
-    width: 220px;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 60px;
   }
+  
   .home__social-link {
     padding: 0.4rem;
     font-size: 1.25rem;
@@ -1259,6 +1296,8 @@ body.light-theme {
     padding: 0.4rem;
     border-radius: 0.5rem;
   }
-
-
+  
+  .light-theme .home__caption {
+    color: hsl(var(--first-hue), var(--sat), 45%); /* deeper purple for visibility */
+  }
 }
