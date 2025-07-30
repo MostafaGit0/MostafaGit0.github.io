@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Certifications – Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Boxicons (if you're using them) -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">Mostafa Bendahud</a>
+      
+      <!-- Theme container here, inside header -->
+      <div class="theme-container">
+        <span class="theme-label">Switch Modes</span>
+        <i class='bx bx-moon change-theme change-theme-button' id="theme-button"></i>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="section">
+      <h2 class="section__title">Certifications</h2>
+      
+      <!-- Optional image below title -->
+      <img src="assets/img/certpnglogo.png" alt="Cert" class="apple-logo" style="width: 150px; height: auto;">
+
+      <!-- Description in styled gray box -->
+      <div class="container grid">
+        <div class="skills__content" style="margin-top: 2rem;">
+          <p>
+            Below are my completed certifications as well as those currently in progress. 
+          </p>
+        </div>
+      </div>
+
+      <!-- Back link -->
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="index.html#work" class="button button--ghost">
+            ← Back to Portfolio
+          </a>          
+      </div>
+
+      <!-- Certifications Gallery -->
+      <div class="container grid" style="margin-top: 3rem;">
+          <div class="skills__content">
+          <img src="assets/img/UOLCert.png" alt="Software testing UOL" style="width: 100%; border-radius: 1rem;">
+          <h3 style="text-decoration: underline; margin-top: 1rem; margin-bottom: 0.5rem;">Foundations of Software Testing and Validation</h3>
+          <p>This cert was my first deep dive into the QA enviornment. Was very in depth on common methodologies and practices.</p>
+          </div>
+      
+          <div class="skills__content">
+          <img src="assets/img/HealthIT.png" alt="Health IT" style="width: 100%; border-radius: 1rem;">
+          <h3 style="text-decoration: underline; margin-top: 1rem; margin-bottom: 0.5rem;">Healthcare IT Support</h3>
+          <p>I took this cert to get an idea of how my expertise trasnlates to Healthcare. I've always been slighlty fond of the healthcare space so naturally i got very curious.</p>
+          </div>
+      
+          <div class="skills__content">
+          <img src="assets/img/GooglePython.png" alt="googlepythoncert" style="width: 100%; border-radius: 1rem;">
+          <h3 style="text-decoration: underline; margin-top: 1rem; margin-bottom: 0.5rem;">Crash Course on Python</h3>
+          <p>I already had tons of python experience when I took this so I completed it preety fast. Just thought "why not have a Google python cert under my belt."</p>
+          </div>
+
+          <div class="skills__content">
+          <img src="assets/img/comingsoon.jpg" alt="ComingSoon" style="width: 100%; border-radius: 1rem;">
+          <h3 style="text-decoration: underline; margin-top: 1rem; margin-bottom: 0.5rem;">Oracle Cloud Infrastructure 2025 AI Foundations Associate</h3>
+          <p>This is the first cert in Oracle's "Race to Certifications 2025". There are 4 different certs available for free until October 2025 so i plan to finish them all but this one caught my eye first XD.</p>
+          </div>
+
+          <div class="skills__content">
+          <img src="assets/img/comingsoon.jpg" alt="ComingSoon" style="width: 100%; border-radius: 1rem;">
+          <h3 style="text-decoration: underline; margin-top: 1rem; margin-bottom: 0.5rem;">CompTIA A+</h3>
+          <p>Very standard and useful cert to have. Been studying on and off for this for a while but am waiting to take the test because I get reimbursment from work when the year ends.</p>
+          </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Scroll Reveal animation -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal().reveal('.section__title, .section__subtitle, .about__img, .skills__content, .button', {
+      origin: 'top',
+      distance: '50px',
+      duration: 1000,
+      delay: 200,
+      reset: false
+    });
+  </script>
+  <script src="assets/js/project-theme.js"></script>
+</body>
+</html>
