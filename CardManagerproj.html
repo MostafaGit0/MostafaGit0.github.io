@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Card Manager – Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Boxicons (if you're using them) -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">Mostafa Bendahud</a>
+      
+      <!-- Theme container here, inside header -->
+      <div class="theme-container">
+        <span class="theme-label">Switch Modes</span>
+        <i class='bx bx-moon change-theme change-theme-button' id="theme-button"></i>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="section">
+      <h2 class="section__title">Card Manager - Secure Card Storage App</h2>
+      
+      <!-- Optional image below title -->
+      <img src="assets/img/CMIcon.png" alt="[CARD_MANAGER_LOGO_ALT]" class="apple-logo" style="width: 150px; height: auto;">
+
+      <!-- Description in styled gray box -->
+      <div class="container grid">
+        <div class="skills__content" style="margin-top: 2rem;">
+          <p>
+            This porject idea was actually thanks to a friend. We were trying to buy something online that didnt take apple pay (very weird) and we didnt have our wallets on us. 
+            Then he said he wishes there was a feature on our phones that saves our card details so we dont have to carry a bunch of credit cards. Then 2 days later i showed him this!
+            Personally I've already used this countless times, espeecially when some online stores have your card info but need you to confirm the CVV. 
+
+            In retrospect, this would be a bit cooler as an app but I had no expiernce with that when I made it. Maybe somewhere down the line i'll make this iOS ready.
+          </p>
+          <div style="text-align: center; margin-top: 1.5rem;">
+            <a href="https://mostafagit0.github.io/CardManager/" class="button button--ghost" target="_blank">
+              Visit the website!
+            </a>
+          </div>
+          <p>Username and Password: TestUser</p>
+        </div>
+      </div>
+
+      <!-- First Image - Login Screen -->
+      <div style="text-align: center; margin-top: 3rem;">
+        <img src="assets/img/CMHomeScreen.png" alt="CMLogin" style="max-width: 500px; width: 100%; height: auto; border-radius: 1rem; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);">
+      </div>
+
+      <!-- Authentication Features -->
+      <div class="container grid" style="margin-top: 2rem;">
+        <div class="skills__content">
+          <h3>Authentication & Security:</h3>
+          <ul>
+            <li>Secure user authentication with Firebase Auth using username/password system</li>
+            <li>Users sign up with custom usernames that are converted to email format internally</li>
+            <li>Each user's cards are completely isolated and secured with user ID verification</li>
+            <li>Smooth animated login/signup interface with tab switching</li>
+            <li>Real-time authentication state management</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Second Image - Main Dashboard -->
+      <div style="text-align: center; margin-top: 3rem;">
+        <img src="assets/img/CMCardsHome.png" alt="Cards" style="max-width: 600px; width: 100%; height: auto; border-radius: 1rem; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);">
+      </div>
+
+      <!-- UI and Visual Features -->
+      <div class="container grid" style="margin-top: 2rem;">
+        <div class="skills__content">
+          <h3>UI & Visual Features:</h3>
+          <ul>
+            <li><strong>Dynamic Card Type Recognition:</strong> Automatically detects card type (Visa, MasterCard, AmEx, Discover) and applies corresponding colors and animations</li>
+            <li><strong>Color-Coded Cards:</strong> Visa cards display in blue gradients, MasterCard in orange, AmEx in blue-cyan, Discover in orange-red, and unknown cards match the website's theme colors</li>
+            <li><strong>Pulsing Animations:</strong> Each card circle features continuous color-changing animations with smooth scaling effects that create a living, breathing interface</li>
+            <li><strong>Card-Specific Icons:</strong> Each card type displays its own unique SVG icon within a floating container that animates on hover</li>
+            <li><strong>3D Hover Effects:</strong> Cards lift, rotate, and scale with advanced CSS transforms including perspective and shadow effects</li>
+            <li><strong>Animated Title:</strong> The main title uses React components to animate each letter individually with rotation and blur effects</li>
+            <li><strong>Ripple Effects:</strong> Hover interactions create expanding ripple animations across card surfaces</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Third Image - Add Card Modal -->
+      <div style="display: flex; gap: 2rem; justify-content: center; margin-top: 3rem; flex-wrap: wrap;">
+        <div style="flex: 1; max-width: 400px; text-align: center;">
+          <img src="assets/img/CMAddCard.png" alt="ADD" style="width: 100%; height: 400px; object-fit: cover; border-radius: 1rem; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);">
+        </div>
+        <div style="flex: 1; max-width: 400px; text-align: center;">
+          <img src="assets/img/CMViewCard.png" alt="VIEW" style="width: 100%; height: 400px; object-fit: cover; border-radius: 1rem; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);">
+        </div>
+      </div>
+
+      <!-- Core Features -->
+      <div class="container grid" style="margin-top: 2rem;">
+        <div class="skills__content">
+          <h3>Core Features:</h3>
+          <ul>
+            <li>Add, view, edit, and delete credit cards with full CRUD operations</li>
+            <li>Real-time card number formatting with automatic spacing during input</li>
+            <li>Automatic expiration date formatting (MM/YY) with input validation</li>
+            <li>One-click copy functionality for card numbers, expiration dates, and CVV codes</li>
+            <li>Smart card type detection based on card number patterns</li>
+            <li>Secure card details view with copy-to-clipboard buttons and visual feedback</li>
+            <li>Responsive design that works seamlessly across desktop and mobile devices</li>
+            <li>Empty state handling with encouraging graphics when no cards are present</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Services and Tools -->
+      <div class="container grid" style="margin-top: 2rem;">
+        <div class="skills__content">
+          <h3>Services & Tools Used:</h3>
+          <ul>
+            <li><strong>Firebase Authentication</strong> – for secure user registration and login management</li>
+            <li><strong>Firebase Firestore</strong> – for real-time card data storage with user-specific collections</li>
+            <li><strong>CSS3 Animations</strong> – for advanced hover effects, transitions, and keyframe animations</li>
+            <li><strong>CSS Custom Properties</strong> – for dynamic theming and consistent color management</li>
+            <li><strong>HTML5 Canvas & SVG</strong> – for custom icons and scalable graphics</li>
+            <li><strong>Modern Browser APIs</strong> – including Clipboard API for copy functionality</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Back link -->
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="index.html#work" class="button button--ghost">
+            ← Back to Portfolio
+        </a>          
+      </div>
+  
+    </section>
+  </main>
+
+  <!-- Scroll Reveal animation -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal().reveal('.section__title, .section__subtitle, .about__img, .skills__content, .button', {
+      origin: 'top',
+      distance: '50px',
+      duration: 1000,
+      delay: 200,
+      reset: false
+    });
+  </script>
+  <script src="assets/js/project-theme.js"></script>
+</body>
+</html>

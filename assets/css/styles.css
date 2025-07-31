@@ -745,8 +745,11 @@ body.light-theme {
 }
 
 .work__img {
-  border-radius: 1rem;
-  margin-bottom: 0.75rem;
+  width: 100%;
+  height: 150px; /* Set a fixed height */
+  object-fit: cover; /* Crop to fit while maintaining aspect ratio */
+  object-position: center; /* Center the image within the container */
+  border-radius: 0.2rem; /* Optional: add rounded corners */
 }
 
 .work__title {
