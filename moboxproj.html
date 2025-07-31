@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MoBox – Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Boxicons (if you're using them) -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">Mostafa Bendahud</a>
+      
+      <!-- Theme container here, inside header -->
+      <div class="theme-container">
+        <span class="theme-label">Switch Modes</span>
+        <i class='bx bx-moon change-theme change-theme-button' id="theme-button"></i>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="section">
+      <h2 class="section__title">MoBox - File Sharing App</h2>
+      
+      <!-- Optional image below title -->
+      <img src="assets/img/BoxUploadIcon.png" alt="Box logo" class="apple-logo">
+
+      <!-- Description in styled gray box -->
+      <div class="container grid">
+        <div class="skills__content" style="margin-top: 2rem;">
+          <p>
+            This idea just came to me one day after realizing sharing a ton of images to my friends through iMessage took FOREVER!
+            I know Dropbox exists and love using it, but I thought what would my version look like? What kind of app can I make to help people share their memories with others?
+          </p>
+        </div>
+      </div>
+
+      <!-- App Logo -->
+      <div style="text-align: center; margin-top: 2rem;">
+        <img src="assets/img/MBimagelogo.png" alt="MBLogo" style="max-width: 350px; height: auto; border-radius: 1rem;">
+      </div>
+
+      <!-- Services and Tools List -->
+      <div class="container grid" style="margin-top: 2rem;">
+        <div class="skills__content">
+          <h3>Services & Tools Used:</h3>
+          <ul>
+            <li><strong>Firebase Storage</strong> – for storing uploaded files</li>
+            <li><strong>Firebase Firestore</strong> – for managing metadata like file info, timestamps, and access counts</li>
+            <li><strong>Firebase Functions</strong> – for backend logic and admin access controls</li>
+            <li><strong>Capacitor Plugins</strong> – to access iOS/Android device libraries like the photo picker</li>
+            <li><strong>Firebase Hosting</strong> – for deploying the web version of the app</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Second Image -->
+      <div style="text-align: center; margin-top: 2rem;">
+        <img src="assets/img/MBHomescreen.PNG" alt="HomeScreen" style="max-width: 400px; width: 100%; height: auto; border-radius: 1rem;">
+      </div>
+
+      <!-- Features List -->
+      <div class="container grid" style="margin-top: 2rem;">
+        <div class="skills__content">
+          <h3>Features:</h3>
+          <ul>
+            <li>Upload and share files using unique 5-character share codes</li>
+            <li>Web and iOS compatibility through Capacitor plugin integration</li>
+            <li>Floating message alerts for user feedback (e.g., upload success)</li>
+            <li>Hidden admin panel unlocked through multiple logo clicks</li>
+            <li>Smart upload handling: switches between parallel and sequential uploads based on file size/count</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 2rem;">
+        <img src="assets/img/MBDebugscreen.PNG" alt="Debug" style="max-width: 400px; width: 100%; height: auto; border-radius: 1rem;">
+      </div>
+
+      <div class="container grid" style="margin-top: 2rem;">
+        <div class="skills__content">
+          <h3>Admin Panel</h3>
+          <p>
+            This is the admin panel where I can manually delete everything in the cloud just in case. 
+            It auto-deletes if it reaches near 3GB but it's useufll to have a big red button handy.
+          </p>
+        </div>
+      </div>
+
+
+      <!-- Back link -->
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="index.html#work" class="button button--ghost">
+            ← Back to Portfolio
+        </a>          
+      </div>
+  
+    </section>
+  </main>
+
+  <!-- Scroll Reveal animation -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal().reveal('.section__title, .section__subtitle, .about__img, .skills__content, .button', {
+      origin: 'top',
+      distance: '50px',
+      duration: 1000,
+      delay: 200,
+      reset: false
+    });
+  </script>
+  <script src="assets/js/project-theme.js"></script>
+</body>
+</html>
